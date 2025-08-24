@@ -16,12 +16,16 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "useDefineForClassFields": true,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": true
   },
   "watchOptions": {
-       "watchFile": "dynamicPriorityPolling",
-       "watchDirectory": "dynamicPriorityPolling",
-       "excludeDirectories": ["**/node_modules", "dist"]
-}
+    "watchFile": "useFsEventsOnParentDirectory",
+    "watchDirectory": "useFsEvents",
+    "excludeDirectories": ["**/node_modules", "dist"],
+    "fallbackPolling": "dynamicPriorityPolling"
+  }
   
 }
